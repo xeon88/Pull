@@ -11,9 +11,8 @@
 <center><h1>PROVA I PULL!</h1></center>
 <center><h1>LEGEND, ORI ED ARGENTI!</h1></center>
 <center><h2><input type="button" value="Multipull" onclick="window.location.reload()"></h2></center>
-<center><h6>Fatto da _Not_ per http://one-piece-treasure-cruise-italia.forumfree.it/</h6></center><br><hr><br>
 
-
+<center><h6>Fatto da _Not_ per http://one-piece-treasure-cruise-italia.forumfree.it/</h6></center><hr><br>
 <script language="JavaScript">
 <!--
 img = new Array()
