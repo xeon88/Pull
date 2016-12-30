@@ -1,10 +1,5 @@
 <html lang="it">
 <head><title>Prova!</title>
-
-<script src="../common/data/units.js"></script>
-
-<script src="../common/js/utils.js"></script>
-
 </head>
 <body>
 
@@ -1479,8 +1474,6 @@ img[128] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0024.png';
 img[129] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0025.png';
 img[130] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0026.png';
 document.write("<img src=\""+img[ran]+"\">");
-
-
 // -->
 </script>
     
