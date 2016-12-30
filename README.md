@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<center><h1>PROVA I PULL!</h1></center>
+<center><p style="color:green;font-family:arial;font-size:30px"><b>PROVA I PULL!</B></p></center>
 <center><h1>LEGEND, ORI ED ARGENTI!</h1></center>
 <center><h2><input type="button" value="Multipull" onclick="window.location.reload()"></h2></center><br>
 <center><h6>Fatto da _Not_ per http://one-piece-treasure-cruise-italia.forumfree.it/</h6></center><hr><br>
@@ -3261,8 +3261,8 @@ img[291] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0879.png';
 img[292] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0880.png'; <!-- Lao-G -->
 document.write("<img src=\""+img[ran]+"\">");
 // -->
-</script>
-    
+</script><hr>
+<br><br><br><br><br><br><center><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"></center>
 </body>
 </html>
 
