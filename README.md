@@ -11,7 +11,7 @@
 <center><p style="color:green;font-family:arial;font-size:30px"><b>PROVA I PULL PRIMA DI FARLO NEL GIOVO!!!</b></p></center>
 <center><h1><div style="color:red;font-family:arial;font-size:30px"><b>LEGGENDE!!!</b></div></h1> <img src="https://s30.postimg.org/sw1hqpkm9/gacha_effect_wanted_6.png" style=""></center>
 <center><h1><div style="color:gold;font-family:arial;font-size:30px"><b>ORI!!</b> </div></h1> <img src="https://s30.postimg.org/f13788q75/gacha_effect_wanted_4.png" style=""></center>
-<center><h1><div style="color:silver;font-family:arial;font-size:30px"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style="">
+<center><h1><div style="color:silver;font-family:arial;font-size:30px"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></center>
 <center><h2><input type="button" value="Multipull" onclick="window.location.reload()"></h2></center>
 <br>
 <center><h6>Fatto da _Not_ per http://one-piece-treasure-cruise-italia.forumfree.it/</h6></center><hr><br>
