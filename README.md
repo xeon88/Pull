@@ -1,7 +1,7 @@
 <html lang="it">
 <head><title>Prova!</title>
 
-<script src="../common/data/units.js"></script>
+<link rel="stylesheet" href="./common/css/prova.css" type="text/css" />
 
 
 
@@ -12,7 +12,8 @@
 <center><h1><div style="color:red;font-family:arial;font-size:30px"><b>LEGGENDE!!!</b></div></h1> <img src="https://s30.postimg.org/sw1hqpkm9/gacha_effect_wanted_6.png" style=""></center>
 <center><h1><div style="color:gold;font-family:arial;font-size:30px"><b>ORI!!</b> </div></h1> <img src="https://s30.postimg.org/f13788q75/gacha_effect_wanted_4.png" style=""></center>
 <center><h1><div style="color:silver;font-family:arial;font-size:30px"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></center>
-<center><h2><input type="button" value="Multipull" onclick="window.location.reload()"></h2></center>
+<br><br><center><hr><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"><hr></center><br><br>
+<center><h2><input type="button" class="button" value="RECRUIT 10+1" onclick="window.location.reload()"></h2></center>
 <br>
 <center><h6>Fatto da _Not_ per http://one-piece-treasure-cruise-italia.forumfree.it/</h6></center><hr><br>
 <script language="JavaScript">
@@ -3462,7 +3463,7 @@ img[309] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0590.png';
 document.write("<img src=\""+img[ran]+"\">");
 // -->
 </script><hr>
-<br><br><br><br><center><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"></center>
+
 </body>
 </html>
 
