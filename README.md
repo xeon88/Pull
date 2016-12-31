@@ -16,6 +16,7 @@
 <center><h2><input type="button" class="button" value="RECRUIT 10+1" onclick="window.location.reload()"></h2></center>
 <br>
 <hr><br>
+<center>
 <script language="JavaScript">
 <!--
 img = new Array()
@@ -3148,8 +3149,8 @@ img[307] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0588.png';
 img[308] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0589.png';
 img[309] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0590.png';
 document.write("<img src=\""+img[ran]+"\">");
- --></script>
- 
+ --></script></center>
+<center>
 <br><br><div class="prova5">PULL IN REGALO</div><br>
 <script language="JavaScript">
 <!-- 
@@ -3467,7 +3468,7 @@ img[308] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0589.png';
 img[309] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0590.png';
 document.write("<img src=\""+img[ran]+"\">");
 // -->
-</script><hr>
+</script></center><hr>
 
 <center><h6>Fatto da _Not_ per <a href="http://one-piece-treasure-cruise-italia.forumfree.it">OPTC ITA</a></h6></center>
 
