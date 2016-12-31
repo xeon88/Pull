@@ -37,3 +37,33 @@
 	position:relative;
 	top:1px;
 }
+
+.prova1 {
+	color:green;
+	font-family:arial;
+	font-size:30px
+}
+
+.prova2 {
+	color:red;
+	font-family:arial;
+	font-size:30px
+}
+
+.prova3 {
+	color:gold;
+	font-family:arial;
+	font-size:30px
+}
+
+.prova4 {
+	color:silver;
+	font-family:arial;
+	font-size:30px
+}
+
+.prova5 {
+	color:gold;
+	font-family:arial;
+	font-size:30px
+}
