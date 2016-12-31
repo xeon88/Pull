@@ -8,14 +8,14 @@
 </head>
 <body>
 
-<center><p style="color:green;font-family:arial;font-size:30px"><b>TESTA LA TUA FORTUNA PRIMA DI FARE I PULL NEL GIOCO!!!</b></p></center>
-<center><h1><div style="color:red;font-family:arial;font-size:30px"><b>LEGGENDE!!!</b></div></h1> <img src="https://s30.postimg.org/sw1hqpkm9/gacha_effect_wanted_6.png" style=""></center>
-<center><h1><div style="color:gold;font-family:arial;font-size:30px"><b>ORI!!</b> </div></h1> <img src="https://s30.postimg.org/f13788q75/gacha_effect_wanted_4.png" style=""></center>
-<center><h1><div style="color:silver;font-family:arial;font-size:30px"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></center>
-<br><br><center><hr><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"><hr></center><br><br>
+<center><p class="prova1"><b>TESTA LA TUA FORTUNA PRIMA DI FARE I PULL NEL GIOCO!!!</b></p></center>
+<center><h1><div class="prova2"><b>LEGGENDE!!!</b></div></h1> <img src="https://s30.postimg.org/sw1hqpkm9/gacha_effect_wanted_6.png" style=""></center>
+<center><h1><div class="prova3"><b>ORI!!</b> </div></h1> <img src="https://s30.postimg.org/f13788q75/gacha_effect_wanted_4.png" style=""></center>
+<center><h1><div class="prova4"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></center>
+<br><br><center><hr><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"><hr></center><br>
 <center><h2><input type="button" class="button" value="RECRUIT 10+1" onclick="window.location.reload()"></h2></center>
 <br>
-<center><h6>Fatto da _Not_ per http://one-piece-treasure-cruise-italia.forumfree.it/</h6></center><hr><br>
+<hr><br>
 <script language="JavaScript">
 <!--
 img = new Array()
@@ -3140,7 +3140,7 @@ img[299] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0911.png';
 img[300] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0912.png';
 img[301] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0913.png';
 img[302] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0914.png';
-img[303] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0934.png';<!-- Jimbe-->
+img[303] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0934.png'; <!-- Jimbe -->
 img[304] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0585.png';
 img[305] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0586.png';
 img[306] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0587.png';
@@ -3148,6 +3148,11 @@ img[307] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0588.png';
 img[308] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0589.png';
 img[309] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0590.png';
 document.write("<img src=\""+img[ran]+"\">");
+ --></script>
+ 
+<br><br><div class="prova5">PULL IN REGALO</div><br>
+<script language="JavaScript">
+<!-- 
 img = new Array()
 ran = Math.floor(310 * Math.random());
 img[0] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0002.png';
@@ -3463,6 +3468,8 @@ img[309] = 'http://onepiece-treasurecruise.com/wp-content/uploads/f0590.png';
 document.write("<img src=\""+img[ran]+"\">");
 // -->
 </script><hr>
+
+<center><h6>Fatto da _Not_ per <a href="http://one-piece-treasure-cruise-italia.forumfree.it">OPTC ITA</a></h6></center>
 
 </body>
 </html>
