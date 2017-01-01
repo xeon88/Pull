@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="./common/css/prova.css" type="text/css" />
 
-<script src="./common/js/prova.js"></script>
+<script src="common/js/prova.js"></script>
 
 </head>
 <body>
