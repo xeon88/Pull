@@ -2,6 +2,7 @@
     <head><title>Prova!</title>
         <link rel="stylesheet" href="./common/css/prova.css" type="text/css" />
         <script src="./common/js/units.js"></script>
+        <script src="./common/js/drops.js"></script>
         <script src="./common/js/utility.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -17,14 +18,18 @@
         <br><br>
         <script language="JavaScript">
             var ids = [];
-            var mass_func_probabilities = [0.5, 0.8 , 0.95, 1];
+            var mass_func_probabilities = [0.5, 0.8 , 0.98, 1];
+            var farmable = [];
 
             $(document).ready(function () {
 
-                ids.push(getIdListByRarity(3, units));
-                ids.push(getIdListByRarity(4, units));
-                ids.push(getIdListByRarity(5, units));
-                ids.push(getIdListByRarity(6, units));
+                farmable = getFarmableList();
+                console.log(farmable);
+
+                ids.push(getIdListByRarity(3, units,farmable));
+                ids.push(getIdListByRarity(4, units,farmable));
+                ids.push(getIdListByRarity(5, units,farmable));
+                ids.push(getIdListByRarity(6, units,farmable));
                 //console.log(names);
 
                 console.log(ids);
@@ -44,6 +49,8 @@
                     var id = Math.floor(Math.random()*ids[star].length);
                     $("#optc-img").append("<img src=" + getImgSrcById(ids[star][id]) + ">");
                 }
+
+                getFarmableList();
             })
 
 
