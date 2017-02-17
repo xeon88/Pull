@@ -773,8 +773,8 @@ window.drops = {
             thumb: 39,
             global: true,
             condition: "None",
-            Expert: [ 36, 37, 38, 99, 109, 114, 4 ],
-            Elite: [ 36, 37, 38, 99, 109, 114, 3 ]
+            Expert: [ 36, 37, 38, 99, 109, 114],
+            Elite: [ 36, 37, 38, 99, 109, 114]
         },
 
         {
@@ -782,8 +782,8 @@ window.drops = {
             thumb: 30,
             global: true,
             condition: "None",
-            Expert: [ 28, 29, 31, 40, 84, 95, 110, 117, 30, 21],
-            Elite: [ 28, 29, 31, 40, 95, 105, 110, 21 ]
+            Expert: [ 28, 29, 31, 40, 84, 95, 110, 117, 30],
+            Elite: [ 28, 29, 31, 40, 95, 105, 110 ]
         },
 
         {
@@ -800,8 +800,8 @@ window.drops = {
             thumb: 66,
             global: true,
             condition: "None",
-            Expert: [ 61, 62, 63, 65, 89, 95, 105, 110, 12, 66 ],
-            Elite: [ 61, 62, 63, 65, 95, 105, 110, 11 ]
+            Expert: [ 61, 62, 63, 65, 89, 95, 105, 66 ],
+            Elite: [ 61, 62, 63, 65, 95, 105, 110 ]
         },
 
         {
@@ -809,8 +809,8 @@ window.drops = {
             thumb: 58,
             global: true,
             condition: "None",
-            Expert: [ 98, 99, 108, 109, 113, 114, 53, 55, 57, 58, 20 ],
-            Elite: [ 98, 99, 108, 109, 113, 114, 53, 55, 57, 58, 20, 1447, 19 ]
+            Expert: [ 98, 99, 108, 109, 113, 114, 53, 55, 57, 58],
+            Elite: [ 98, 99, 108, 109, 113, 114, 53, 55, 57, 58 ]
         },
 
         {
@@ -818,7 +818,7 @@ window.drops = {
             thumb: 228,
             global: true,
             condition: "None",
-            "All Difficulties": [ 33, 35, 84, 95, 105, 107, 110, 112, 228, 34, 26, 25, 24, 23, 22, 1448 ]
+            "All Difficulties": [ 33, 35, 84, 95, 105, 107, 110, 112, 228, 34, 1448 ]
         },
 
         {
@@ -828,8 +828,8 @@ window.drops = {
             condition: "None",
             challenge: 'High Score calculated with Crew Cost, Turns Taken and Tap Accuracy',
             challengeData: [['150,000','1x Blue Elder'],['450,000','1x ATK Cotton Candy'],['750,000','3x Rainbow Gems']],
-            Expert: [ 43, 49, 79, 85, 96, 106, 231, 230, 229, 221, 208, 62, 54 ],
-            Elite: [ 43, 49, 96, 111, 117, 231, 230, 229, 221, 208 ]
+            Expert: [ 43, 49, 79, 85, 96, 106, 231, 230, 229],
+            Elite: [ 43, 49, 96, 111, 117, 231, 230, 229 ]
         },
 
         {
@@ -839,7 +839,7 @@ window.drops = {
             condition: "None",
             challenge:'Total number of hits above 50,000',
             challengeData: [['5 Times','1x Yellow Elder'],['15 Times','1x ATK Cotton Candy'],['25 Times','3x Rainbow Gems']],
-            "All Difficulties": [ 31, 33, 262, 264, 87, 88, 98, 99, 113, 265, 263, 225, 210, 64, 56, 32 ]
+            "All Difficulties": [ 31, 33, 262, 264, 87, 88, 98, 99, 113, 265, 263, 56]
         },
 
         {
@@ -849,7 +849,7 @@ window.drops = {
             condition: "None",
             challenge: 'Cumulative Damage dealt to enemies in a single run',
             challengeData: [['600,000 Damage','1x Green Elder'],['1,400,000 Damage','1y Rainbow Gem & 1x HP Cotton Candy'],['3,000,000 Damage','2x Rainbow Gems, 1x Forbidden Tome']],
-            "All Difficulties": [ 67, 69, 86, 97, 112, 219, 212, 206, 204, 73, 52, 50 ]
+            "All Difficulties": [ 67, 69, 86, 97, 112, 219, 212, 206, 204, 69,70,73, 52, 50 ]
         },
 
         {
@@ -857,8 +857,8 @@ window.drops = {
             thumb: 297,
             global: true,
             condition: "None",
-            Expert: [ 99, 88, 114, 296, 298, 299, 236, 234, 223, 217, 202, 200, 199 ],
-            Elite: [ 99, 88, 114, 296, 298, 299, 236, 234, 223, 202, 200 ]
+            Expert: [ 99, 88, 114, 296, 297,298, 299],
+            Elite: [ 99, 88, 114, 296, 298, 299 ]
         },
 
         {
@@ -866,7 +866,7 @@ window.drops = {
             thumb: 318,
             global: true,
             condition: 'You may only bring STR units into this island',
-            "All Difficulties": [ 86, 97, 110, 112, 317, 319, 259, 253, 216, 215, 62, 56 ]
+            "All Difficulties": [ 86, 97, 110, 112, 317, 319]
         },
 
         {
@@ -874,7 +874,7 @@ window.drops = {
             thumb: 322,
             global: true,
             condition: 'You may only bring DEX units for 15 and 30 Stamina',
-            "All Difficulties": [ 85, 96, 111, 112, 321, 323, 324 , 325, 251, 218, 75, 74, 54, 21 ]
+            "All Difficulties": [ 85, 96, 111, 112, 321, 323, 324 , 325, 54 ]
         },
 
         {
@@ -1694,7 +1694,7 @@ window.drops = {
             "All Difficulties": [ 1379 ]
         },
         {  name : 'No Id',
-           "Global" : [494 ,1035 , 1036 , 1037 , 1038,1360 ,574, 1452,1453,1454,1455,1456,1457,1458,1459,1460,1461,1462,1463],
+           "Global" : [494 ,727,1035 , 1036 , 1037 , 1038,1360 ,574, 1452,1453,1454,1455,1456,1457,1458,1459,1460,1461,1462,1463],
             "6 stars" : [963,964,965,1413,1445,261,367,416,459,530,562,578,649, 669,718,720,748,870,935,1001,
                         1035,1045,1085,1121,1123,1192,1240,1268,1314,1362,1391,1404,1434]
         },
