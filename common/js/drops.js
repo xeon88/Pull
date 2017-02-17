@@ -884,8 +884,8 @@ window.drops = {
             condition: 'You may only bring INT units for 15 and 30 Stamina',
             challenge: 'Total Damage dealt to enemies in one turn',
             challengeData: [['150,000 Damage','1x Yellow Elder'],['400,000 Damage','1x ATK Cotton Candy'],['800,000 Damage','3x Rainbow Gems']],
-            Expert: [ 87, 98, 113, 114, 336, 338, 339, 339, 338, 255, 222, 77, 68 ],
-            Elite: [ 87, 98, 113, 336, 338, 339, 339, 338, 255, 222, 77, 68 ]
+            Expert: [ 87, 98, 113, 114, 336, 338, 339,68 ],
+            Elite: [ 87, 98, 113, 336, 338, 339 ]
         },
 
         {
@@ -895,7 +895,7 @@ window.drops = {
             condition: 'You may only bring QCK units for 15 and 30 Stamina',
             challenge: 'High Score calculated with Crew Cost, Turns Taken and Tap Accuracy',
             challengeData: [['200,000 Points','1x Red Elder'],['400,000 Points','1x HP Cotton Candy'],['700,000 Points','3x Rainbow Gems']],
-            "All Difficulties": [ 28, 40, 60, 213, 215, 340, 292, 291, 290, 261, 257, 214, 71, 44, 1413 ]
+            "All Difficulties": [ 28, 40, 60, 213, 215, 340, 214, 44]
         },
 
         {
@@ -905,7 +905,7 @@ window.drops = {
             condition: 'You may only bring PSY units for 15 and 30 Stamina',
             challenge: 'High Score calculated with Crew Cost, Turns Taken and Tap Accuracy',
             challengeData: [['10,000 Points','1x Black Elder'],['40,000 Points','1x Rainbow Gem, 1x ATK Cotton Candy'],['70,000 Points','2x Rainbow Gems, 1x Defence Boost Forbidden Tome']],
-            "All Difficulties": [ 385, 387, 388, 335, 314, 36, 16, 1446, 11 ]
+            "All Difficulties": [ 385, 387, 388, 335, 36, 1446 ]
         },
 
         {
@@ -915,7 +915,7 @@ window.drops = {
             condition: 'You can only get STR, QCK, INT and Food Orbs',
             challenge: 'Total number of hits over 50,000',
             challengeData: [['3 Times','1x Green Elder'],['12 Times','1x RCV Cotton Candy'],['25 Times','3x Rainbow Gems']],
-            "All Difficulties": [ 391, 393, 394, 394, 393, 329, 316, 47, 34, 4 ]
+            "All Difficulties": [ 391, 393, 394, 394, 393, 329, 47]
         },
 
         {
@@ -923,7 +923,7 @@ window.drops = {
             thumb: 405,
             global: true,
             condition: 'You can only get QCK, DEX, PSY and Food Orbs',
-            "All Difficulties": [ 404, 406, 407, 407, 406, 333, 312, 208, 26, 20 ]
+            "All Difficulties": [ 404, 406, 407, 407, 406 ]
         },
 
         {
@@ -931,7 +931,7 @@ window.drops = {
             thumb: 420,
             global: true,
             condition: "None",
-            "All Difficulties": [ 36, 37, 47, 48, 49, 50, 51, 59, 63, 211, 233, 420, 421, 422, 422, 332, 308, 225, 206, 204]
+            "All Difficulties": [ 36, 37, 47, 48, 49, 50, 51, 59, 63, 211, 420, 421,332]
         },
 
         {
@@ -941,7 +941,7 @@ window.drops = {
             condition: 'You can only get STR, DEX, INT and PSY Orbs',
             challenge: 'Cumulative Damage dealt to enemies in a single run',
             challengeData: [['500,000 Damage','1x Black Elder'],['1,500,000 Damage','1x ATK Cotton Candy'],['3,000,000 Damage','3x Rainbow Gems']],
-            "All Difficulties": [ 423, 425, 425, 327, 310, 223, 219, 214, 202 ]
+            "All Difficulties": [ 423, 327, 214 ]
         },
 
         {
@@ -951,7 +951,7 @@ window.drops = {
             challenge: 'Damage dealt in a single Round',
             challengeData: [['350,000','1x Black Elder'], ['900,000','1x HP Cotton Candy'], ['2,000,000','3x Rainbow Gems']],
             condition: 'Each nonOkama in your Team will take 60 Damage each turn',
-            "All Difficulties": [ 433, 434, 435, 384, 372, 371, 359, 217, 210]
+            "All Difficulties": [ 433, 434, 435, 384, 372, 371]
         },
 
         {
@@ -961,7 +961,7 @@ window.drops = {
             condition: 'Higher Chance of Food orbs',
             challenge: 'Cumulative Damage dealt to enemies in a single run',
             challengeData: [['450,000 Damage','1x Yellow Elder'],['1,250,000 Damage','1x RCV Cotton Candy'],['3,000,000 Damage','3x Rainbow Gems']],
-            "All Difficulties": [ 290, 293, 294, 295, 334, 379, 381, 382, 429, 441, 442, 443, 444, 378, 368, 363, 251, 73]
+            "All Difficulties": [ 290, 293, 294, 295, 334, 379, 381, 382, 429, 441, 442, 443, 444, 378, 368]
         },
 
         {
@@ -971,7 +971,7 @@ window.drops = {
             condition: '30: NonFighter, Evolver, or Booster class characters are weakend; 15: Striker and Slasher class characters are weakened (Note: Multiclass characters such as Fighter / Powerhouse are not affected)',
             challenge: 'Damage dealt in a single Round',
             challengeData: [['???','1x ??? Elder'], ['???','1x ?? Cotton Candy'], ['???','3x Rainbow Gems']],
-            "All Difficulties": [ 460, 461, 398, 396, 370, 361, 253, 236, 234 ]
+            "All Difficulties": [ 460, 461, 398, 396, 370, 236, 234 ]
         },
 
         {
@@ -981,7 +981,7 @@ window.drops = {
             condition: '30: NonStriker, Evolver, or Booster class characters are weakend; 15: Fighter and Shooter class characters are weakened (Note: Multiclass characters such as Striker / Slasher are not affected)',
             challenge: 'Total Damage dealt to enemies in one turn',
             challengeData: [['120,000 Damage','1x Blue Elder'],['600,000 Damage','1x HP Cotton Candy, 1x Rainbow Gem'],['2,500,000 Damage','1x Cooldown Reduction Forbidden Tome, 2x Rainbow Gems']],
-            "All Difficulties": [ 509, 511, 402, 400, 374, 357, 259, 212, 209 ]
+            "All Difficulties": [ 509, 511, 402, 400, 374, 212]
         },
 
         {
@@ -991,7 +991,7 @@ window.drops = {
             condition: '30: NonShooter, Evolver, or Booster class characters are weakend; 15: Fighter and Slasher class characters are weakened',
             challenge: 'Cumulative Damage dealt to enemies in a single run',
             challengeData: [['600,000 Damage','1x Yellow Elder'],['2,000,000 Damage','1x HP Cotton Candy, 1x Rainbow Gem'],['5,000,000 Damage','1x Matching Orb Forbidden Tome, 2x Rainbow Gems']],
-            "All Difficulties": [ 537, 539, 540, 539, 428, 416, 365, 257, 59 ]
+            "All Difficulties": [ 537, 539, 540, 539, 428, 59 ]
         },
 
         {
@@ -1001,7 +1001,7 @@ window.drops = {
             condition: '30: NonSlasher, Evolver, or Booster class characters are weakend; 15: Striker and Shooter class characters are weakened',
             challenge: 'Cumulative Damage dealt to enemies in a single run',
             challengeData: [['600,000 Damage','1x Black Elder'],['2,000,000 Damage','1x ATK Cotton Candy, 1x Rainbow Gem'],['5,000,000 Damage','1x Defence Boost Forbidden Tome, 2x Rainbow Gems']],
-            "All Difficulties": [ 549, 551, 552, 552, 551, 432, 426, 408, 329, 308, 255 ]
+            "All Difficulties": [ 549, 551, 552, 552, 551, 432, 426, 408, 329]
         },
 
         {
@@ -1010,7 +1010,7 @@ window.drops = {
             global: true,
             challenge: 'Total number of hits over 50,000',
             challengeData: [['3 Times','1x Red Elder'],['12 Times','1x RCV Cotton Candy'],['34 Times','3x Rainbow Gems & 1x Forbidden Tome']],
-            "All Difficulties": [ 570, 572, 573, 431, 429, 410, 333, 332, 327, 316, 75 ]
+            "All Difficulties": [ 570, 572, 573, 431, 429, 333, 332, 327 ]
         },
 
         {
@@ -1020,7 +1020,7 @@ window.drops = {
             condition: 'All Units considered from the “Sea” will lose 20% to all stats',
             challenge: 'Total number of hits over 50,000',
             challengeData: [['4 Times','1x Black Elder'],['16 Times','1x ATK Cotton Candy'],['38 Times','3x Rainbow Gems']],
-            "All Difficulties": [ 581, 582, 583, 584, 584, 544, 466, 412, 371, 335, 314, 291 ]
+            "All Difficulties": [ 581, 582, 583, 584, 584, 544, 371, 335]
         },
 
         {
@@ -1028,8 +1028,8 @@ window.drops = {
             thumb: 599,
             global: true,
             condition: 'You cannot use any two units that are the same',
-            Expert: [ 598, 600,601, 504, 467, 463, 414, 372, 332, 310, 77 ],
-            Elite: [ 598, 600,601, 467, 463, 414, 372, 332, 310, 77 ]
+            Expert: [ 598, 600,601, 504, 467, 372, 332 ],
+            Elite: [ 598, 600,601, 467, 372, 332 ]
         },
 
         {
@@ -1037,7 +1037,7 @@ window.drops = {
             thumb: 607,
             global: true,
             condition: 'You cannot use any two units that are the same',
-            "All Difficulties": [ 606, 608, 609, 502, 457, 449, 312, 52, 50 ]
+            "All Difficulties": [ 606, 608, 609, 52, 50 ]
         },
 
         {
@@ -1047,7 +1047,7 @@ window.drops = {
             condition: 'No Units above the cost of 49 is allowed',
             challenge: 'Total number of hits over 50,000',
             challengeData: [['4 Times','1x Blue Elder'],['8 Times','1x Rainbow Gem, 1x HP Cotton Candy'],['22 Times','2x Rainbow Gems, 1x Orb Matching Forbidden Tome']],
-            "All Difficulties": [ 634, 636, 637, 636, 464, 451, 396, 370, 367, 359, 64 ]
+            "All Difficulties": [ 634, 636, 637, 636, 464, 396, 370, 367, 64 ]
         },
 
         {
@@ -1055,7 +1055,7 @@ window.drops = {
             thumb: 656,
             global: true,
             condition: 'You can only get STR, QCK, DEX, PSY and INT orbs',
-            "All Difficulties": [ 655, 657, 658, 658, 500, 465, 455, 453, 398, 357, 60 ]
+            "All Difficulties": [ 655, 657, 658, 658, 500, 465, 455, 398, 60 ]
         },
 
         {
@@ -1170,14 +1170,14 @@ window.drops = {
             condition: "None",
             challenge:'Total number of hits above 50,000',
             challengeData: [['4 Times','1x INT Elder'],['9 Times','1x ATK Cotton Candy, 1x Rainbow Gem'],['22 Times','1x Despair Resistance Forbidden Tome, 2x Rainbow Gems']],
-            "All Difficulties": [ 41, 42, 53, 235, 395, 397, 419, 426, 427, 432, 563, 564, 866, 867, 868, 709, 673, 671, 633, 500, 467, 465, 451, 431 ]
+            "All Difficulties": [ 41, 42, 53, 235, 395, 397, 419, 426, 427, 432, 563, 564, 866, 867, 868, 709, 673, 671, 633, 500, 467, 465, 431 ]
         },
 
         {
             name: "Riverside Banquet! Enter the Crazy Ones!",
             thumb: 885,
             condition: 'Highly increased chance of TND, Bomb, and G orbs',
-            "All Difficulties": [ 885, 886, 887, 887, 704, 703, 677, 675, 504, 453, 416 ]
+            "All Difficulties": [ 885, 886, 887, 887, 704, 703, 677, 675, 504, 416 ]
         },
 
         {
@@ -1291,7 +1291,7 @@ window.drops = {
             thumb: 1167,
             global: true,
             condition: "None",
-            "All Difficulties": [ 1166, 1168, 1170, 578, 999, 991, 993, 675, 508, 616, 703, 1121 ]
+            "All Difficulties": [ 1166, 1168, 1170,1171 .578, 999, 991, 993, 675, 508, 616, 703, 1121 ]
         },
 
         {
@@ -1643,7 +1643,7 @@ window.drops = {
             Exhibition: [ 776, 778, 803, 832, 834, 859, 861, 882 , 883, 902, 904, 925, 927, 952, 984, 1017, 1019, 1197, 1221, 1252, 1253, 1293, 1311, 1339, 1340, 1377, 1402, 1423, 1424, 1457, 1459 ],
             Underground: [ 776, 778, 803, 832, 834, 859, 861, 882 ,  883, 902, 904, 925, 927, 952, 984, 1017, 1019, 1197, 1221, 1252, 1253, 1293, 1311, 1339, 1340, 1377, 1402, 1423, 1424, 1457, 1459 ],
             Chaos: [ 776, 777, 778,779, 780,781, 803,804, 805,806, 830,831, 832,833, 834,
-                    859, 860, 861,862, 881, 882 ,883, 900,901, 902,903 ,922 ,923, 924 ,925, 926,950, 951, 982, 983,
+                    859, 860, 861,862, 881, 882 ,883,884, 900,901, 902,903 ,922 ,923, 924 ,925, 926,950, 951, 982, 983,
                    984,985, 1017, 1018, 1015,1016, 1040,1041, 1042,1043, 1086,1087, 1088, 1089, 1090,1091, 1101,1102,
                   1103,1104, 1105,1106, 1140,1141, 1142,1143, 1144,1145, 1195,1196, 1219,1220, 1221,1222, 1250,1251,
                   1252,1253, 1291,1292, 1293,1294, 1309,1310, 1311,1312, 1337,1338, 1339, 1340,1341, 1375,1376, 1377,
@@ -1656,7 +1656,7 @@ window.drops = {
             condition: "10, 20, 30, 35 stamina difficulty. 30 and 35 Stamina has a chance of dropping the Universal Skill Book.",
             "Characters": [ 927, 296, 299, 773, 774, 1224 ],
             "Boosters and Evolvers": [ 351, 193, 114, 266, 83, 118 ],
-            "Global": [ 261, 1413, 562, 720, 8, 1388, 219, 75, 255, 314, 316, 357, 410, 408, 449, 451, 455, 641, 643, 754, 760, 840, 880, 906, 910, 999, 554, 1175, 528, 1177, 560, 1212, 1245, 218, 22, 1448, 24, 204, 384, 504, 508, 785, 789 ],
+            "Global": [ 261, 1413, 562, 720, 8, 1388, 219, 75, 255, 314, 316, 410, 408, 449, 455, 641, 643, 754, 760, 840, 880, 906, 910, 999, 554, 1175, 528, 1177, 560, 1212, 1245, 218, 22, 1448, 24, 204, 384, 504, 508, 785, 789 ],
             "Japan": [ 261, 562, 720, 748, 935, 1413 ]
         },
 
@@ -1666,7 +1666,7 @@ window.drops = {
             condition: "10, 20, 30, 35 stamina difficulty. 30 and 35 Stamina has a chance of dropping the Universal Skill Book.",
             "Characters": [ 67, 69, 262, 264, 298 ],
             "Boosters and Evolvers": [ 113, 192, 350, 266, 83, 118 ],
-            "Global": [ 416, 459, 530, 217, 004, 1387, 12, 221, 1389, 77, 210, 253, 259, 310, 312, 361, 363, 414, 453, 645, 647, 752, 756, 937, 939, 991, 520, 1115, 524, 1119, 558, 1208, 1245, 25, 202, 208, 206, 502, 787, 789, 739 ],
+            "Global": [ 416, 459, 530, 217, 004, 1387, 12, 221, 1389, 77, 210, 253, 259, 310, 312, 361, 363, 414, 645, 647, 752, 756, 937, 939, 991, 520, 1115, 524, 1119, 558, 1208, 1245, 25, 202, 208, 206, 502, 787, 789, 739 ],
             "Japan": [ 416, 459, 530, 669, 578, 1121 ]
         },
 
