@@ -17,17 +17,6 @@
     }
 
 
-    function checkName(name) {
-
-        var avoidable_elem = ["Porc","Crab","Turtle","Penguin","Group Leader","Lobster"];
-        var check = false;
-        for (var i = 0 ; avoidable_elem.length ; i++){
-
-            check = check || name.indexOf(avoidable_elem[i]) !== -1;
-        }
-        return check;
-    }
-
 
     function getIdListByRarity(rarity, characters, farmable) {
         var ids = [] ;
@@ -51,7 +40,7 @@
 
             var index = farmable.indexOf(i+1);
             if(index!==-1){
-               console.log( "id : " + i +  "  farmable index : " + index);
+               console.log( "id : " + (i+1) +  "  farmable index : " + index);
             }
             else{
                 if(characters[i][3]==rarity){
@@ -133,6 +122,8 @@
             idsFarmable = idsFarmable.concat( special['Japan']);
             idsFarmable = idsFarmable.concat( special['Global']);
             idsFarmable = idsFarmable.concat( special.thumb);
+            idsFarmable = idsFarmable.concat( special.Exhibition);
+            idsFarmable = idsFarmable.concat( special.Underground);
             idsFarmable = idsFarmable.concat( special.Chaos);
 
         }
