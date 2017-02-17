@@ -119,6 +119,7 @@
             var special = window.drops['Special'][i];
             console.log(special);
             idsFarmable = idsFarmable.concat( special['All Difficulties']);
+            idsFarmable = idsFarmable.concat( special['6 stars']);
             idsFarmable = idsFarmable.concat( special['Japan']);
             idsFarmable = idsFarmable.concat( special['Global']);
             idsFarmable = idsFarmable.concat( special.thumb);

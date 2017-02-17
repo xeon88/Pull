@@ -782,8 +782,8 @@ window.drops = {
             thumb: 30,
             global: true,
             condition: "None",
-            Expert: [ 28, 29, 31, 40, 84, 95, 110, 117, 30, 21, 8 ],
-            Elite: [ 28, 29, 31, 40, 95, 105, 110, 21, 7 ]
+            Expert: [ 28, 29, 31, 40, 84, 95, 110, 117, 30, 21],
+            Elite: [ 28, 29, 31, 40, 95, 105, 110, 21 ]
         },
 
         {
@@ -791,8 +791,8 @@ window.drops = {
             thumb: 46,
             global: true,
             condition: "None",
-            Expert: [ 41, 42, 43, 45, 16 ],
-            Elite: [ 41, 42, 43, 45, 96, 106, 111, 15 ]
+            Expert: [ 41, 42, 43, 45],
+            Elite: [ 41, 42, 43, 45, 96, 106, 111]
         },
 
         {
@@ -931,7 +931,7 @@ window.drops = {
             thumb: 420,
             global: true,
             condition: "None",
-            "All Difficulties": [ 36, 37, 47, 48, 49, 50, 51, 59, 63, 211, 233, 420, 421, 422, 422, 332, 308, 225, 206, 204, 8 ]
+            "All Difficulties": [ 36, 37, 47, 48, 49, 50, 51, 59, 63, 211, 233, 420, 421, 422, 422, 332, 308, 225, 206, 204]
         },
 
         {
@@ -951,7 +951,7 @@ window.drops = {
             challenge: 'Damage dealt in a single Round',
             challengeData: [['350,000','1x Black Elder'], ['900,000','1x HP Cotton Candy'], ['2,000,000','3x Rainbow Gems']],
             condition: 'Each nonOkama in your Team will take 60 Damage each turn',
-            "All Difficulties": [ 433, 434, 435, 384, 372, 371, 359, 217, 210, 19 ]
+            "All Difficulties": [ 433, 434, 435, 384, 372, 371, 359, 217, 210]
         },
 
         {
@@ -961,7 +961,7 @@ window.drops = {
             condition: 'Higher Chance of Food orbs',
             challenge: 'Cumulative Damage dealt to enemies in a single run',
             challengeData: [['450,000 Damage','1x Yellow Elder'],['1,250,000 Damage','1x RCV Cotton Candy'],['3,000,000 Damage','3x Rainbow Gems']],
-            "All Difficulties": [ 290, 293, 294, 295, 334, 379, 381, 382, 429, 441, 442, 443, 444, 378, 368, 363, 251, 73, 15 ]
+            "All Difficulties": [ 290, 293, 294, 295, 334, 379, 381, 382, 429, 441, 442, 443, 444, 378, 368, 363, 251, 73]
         },
 
         {
@@ -1028,8 +1028,8 @@ window.drops = {
             thumb: 599,
             global: true,
             condition: 'You cannot use any two units that are the same',
-            Expert: [ 598, 600, 504, 467, 463, 414, 372, 332, 310, 77 ],
-            Elite: [ 598, 600, 467, 463, 414, 372, 332, 310, 77 ]
+            Expert: [ 598, 600,601, 504, 467, 463, 414, 372, 332, 310, 77 ],
+            Elite: [ 598, 600,601, 467, 463, 414, 372, 332, 310, 77 ]
         },
 
         {
@@ -1101,8 +1101,8 @@ window.drops = {
             thumb: 743,
             global: true,
             condition: 'You can only bring STR, QCK and DEX units',
-            "Japan": [ 740, 742, 560, 558, 586, 567, 566, 412, 225, 18, 1208, 1212 ],
-            "Global": [ 740, 742, 671, 673, 586, 567, 566, 412, 225, 18 ]
+            "Japan": [ 740, 742, 560, 558, 586, 567, 566, 412, 225, 1208, 1212 ],
+            "Global": [ 740, 742, 671, 673, 586, 567, 566, 412, 225 ]
         },
 
         {
@@ -1111,7 +1111,7 @@ window.drops = {
             global: true,
             condition: "None",
             "Japan": [ 761, 762, 763, 764, 765, 610, 588, 565, 556, 426, 408, 261, 217, 1210, 1413 ],
-            "Global": [ 761, 762, 763, 764, 765, 426, 408, 332, 308, 292, 261, 217, 8, 1413 ]
+            "Global": [ 761, 762, 763, 764, 765, 426, 408, 332, 308, 292, 261, 217, 1413 ]
         },
 
         {
@@ -1130,8 +1130,8 @@ window.drops = {
             condition: 'You can only bring Fighter and Powerhouse units',
             challenge: 'High Score calculated with Crew Cost, Turns Taken and Tap Accuracy',
             challengeData: [['100,000','1x Purple Elder'],['400,000','1x RCV Candy, 1x Rainbow Gem'],['750,000','1x AutoHeal Skullbook, 2x Rainbow Gem']],
-            "Japan": [ 796, 798, 799, 800, 800, 639, 628, 562, 414, 432, 380, 75 ],
-            "Global": [ 796, 798, 799, 800, 800, 677, 628, 562, 414, 432, 380, 75 ]
+            "Japan": [ 796, 798, 799, 800, 801, 639, 628, 562, 414, 432, 380, 75 ],
+            "Global": [ 796, 798, 799, 800, 801, 677, 628, 562, 414, 432, 380, 75 ]
         },
 
         {
@@ -1139,8 +1139,8 @@ window.drops = {
             thumb: 808,
             global: true,
             condition: 'You can only bring Slasher and Cerebral units. (No Evolution/Booster)',
-            "Japan": [ 807, 809, 811, 811, 645, 641, 631, 502, 11, 12, 9 ],
-            "Global": [ 807, 809, 811, 811, 760, 675, 631, 502, 11, 12, 9 ],
+            "Japan": [ 807, 809, 810, 811, 812, 645, 641, 631, 502],
+            "Global": [ 807, 809, 810, 811, 812, 760, 675, 631, 502],
         },
 
         {
@@ -1487,7 +1487,7 @@ window.drops = {
             name: 'Clash!! Duval',
             thumb: 654,
             global: true,
-            Master: [ 112, 118, 302, 652 ],
+            Master: [ 112, 118, 302, 652 , 653],
             Expert: [ 86, 97, 112, 652 ]
         },
 
@@ -1525,7 +1525,7 @@ window.drops = {
 
         {
             name: 'Clash!! Pica',
-            thumb: 932,
+            thumb: 933,
             Master: [ 932 ],
             Expert: [ 932 ]
         },
@@ -1612,7 +1612,7 @@ window.drops = {
             global: true,
             challenge: 'Total number of hits over 30,000',
             challengeData: [['Japan Rewards', ''],['10 Times','#686 Vivi\'s Breather Unit'],['35 Times','1x HP Cotton Candy'],['72 Times','3x Rainbow Gems'], ['Global Rewards', ''],['10 Times','1x Bind Resistance Forbidden Tome, 1x Despair Resistance Forbidden Tome, 1x AutoHeal Forbidden Tome, 1x Rainbow Gem'],['35 Times','1x Red Elder Turtle, 1x Blue Elder Turtle, 1x Green Elder Turtle, 1x Yellow Elder Turtle, 1x Black Elder Turtle, 2x Rainbow Gems'],['72 Times','5x Rainbow Gems']],
-            "All Difficulties": [ 659, 680, 681 ,682, 683 ,684, 685 ,1200, 1198 ]
+            "All Difficulties": [ 659, 680, 681 ,682, 683 ,684, 685 ,1200,1201, 1193,1194,1198,1199]
         },
 
         {
@@ -1620,7 +1620,10 @@ window.drops = {
             thumb: 1300,
             "All Difficulties": [ 1299, 1305, 1325 ],
         },
-
+        {
+            name: 'Christmas Event Characters',
+            "All Difficulties": [ 855,856,857, 858 ],
+        },
         {
             name: 'Valentines Day Characters',
             thumb: 1463,
@@ -1691,7 +1694,9 @@ window.drops = {
             "All Difficulties": [ 1379 ]
         },
         {  name : 'No Id',
-           "Global" : [494 ,1035 , 1036 , 1037 , 1038, 574, 1452]
+           "Global" : [494 ,1035 , 1036 , 1037 , 1038,1360 ,574, 1452,1453,1454,1455,1456,1457,1458,1459,1460,1461,1462,1463],
+            "6 stars" : [963,964,965,1413,1445,261,367,416,459,530,562,578,649, 669,718,720,748,870,935,1001,
+                        1035,1045,1085,1121,1123,1192,1240,1268,1314,1362,1391,1404,1434]
         },
 
         {
