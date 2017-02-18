@@ -22,17 +22,13 @@
         var ids = [] ;
         for (var i=0 ; i<characters.length ; i++){
 
-
             var index = farmable.indexOf(i+1);
             if(index!==-1){
               // console.log( "id : " + (i+1) +  "  farmable index : " + index);
             }
             else{
                 if(characters[i][3]==rarity){
-                    if((i+1)==0){
-                        console.log("add : " + (i+1));
-                    }
-                    ids.push(i+1);
+                        ids.push(i+1);
                 }
             }
         }
@@ -43,16 +39,16 @@
     function getImgSrcById(id){
 
         if(id<10){
-            return optcImgBaseURL + "f000" + id + ".png>";
+            return optcImgBaseURL + "f000" + id + ".png";
         }
         if(id >=10 && id<100){
-            return optcImgBaseURL + "f00" + id + ".png>";
+            return optcImgBaseURL + "f00" + id + ".png";
         }
         if(id >=100 && id<1000){
-            return optcImgBaseURL + "f0" + id + ".png>";
+            return optcImgBaseURL + "f0" + id + ".png";
         }
         if(id >=1000){
-            return optcImgBaseURL + "f" + id + ".png>";
+            return optcImgBaseURL + "f" + id + ".png";
         }
     }
 
@@ -82,7 +78,6 @@
 
         for(var i = 0; i<window.drops['Fortnight'].length ; i++){
             var fortnight = window.drops['Fortnight'][i];
-            console.log(fortnight);
             idsFarmable = idsFarmable.concat( fortnight.Expert);
             idsFarmable = idsFarmable.concat( fortnight.Elite);
             idsFarmable = idsFarmable.concat( fortnight['All Difficulties']);
@@ -104,9 +99,7 @@
 
         for(var i = 0; i<window.drops['Special'].length ; i++){
             var special = window.drops['Special'][i];
-            console.log(special);
             idsFarmable = idsFarmable.concat( special['All Difficulties']);
-            idsFarmable = idsFarmable.concat( special['6 stars']);
             idsFarmable = idsFarmable.concat( special['Japan']);
             idsFarmable = idsFarmable.concat( special['Global']);
             idsFarmable = idsFarmable.concat( special.thumb);
