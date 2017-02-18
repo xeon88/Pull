@@ -14,12 +14,15 @@
         <div align="center"><h1><div class="prova4"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></div>
         <br><br><center><hr><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"><hr></center><br>
         <div align="center"><h2><input type="button" class="button" value="RECRUIT 10+1" onclick="window.location.reload()"></h2></div>
-        <div id="optc-img" align="center"></div>
+        <div id="pull" align="center"></div>
         <br><br>
+        <div id="gift" align="center"></div>
+        
         <script language="JavaScript">
             var ids = [];
             var mass_func_probabilities = [0.5, 0.8 , 0.98, 1];
             var farmable = [];
+            var pull_result ;
 
             $(document).ready(function () {
 
@@ -34,8 +37,7 @@
 
                 console.log(ids);
 
-                // console.log(ids);
-                for(var i=0; i<10 ; i++){
+                function single_pull() {
                     var uniform_dist_sample = Math.random();
                     var star = 0;
                     console.log(uniform_dist_sample);
@@ -47,10 +49,20 @@
                     }
                     console.log(star);
                     var id = Math.floor(Math.random()*ids[star].length);
-                    $("#optc-img").append("<img src=" + getImgSrcById(ids[star][id]) + ">");
+                    pull_result = { id: id , star : star};
+                    return pull_result;
                 }
 
-                getFarmableList();
+
+                // console.log(ids);
+                for(var i=0; i<10 ; i++){
+                    var pull = single_pull();
+                    $("#pull").append("<img src=" + getImgSrcById(ids[pull.star][pull.id]) + ">");
+                }
+
+
+                var pull = single_pull();
+                $("#gift").append("<img src=" + getImgSrcById(ids[pull.star][pull.id]) + ">");
             })
 
 
