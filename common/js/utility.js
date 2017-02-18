@@ -22,29 +22,16 @@
         var ids = [] ;
         for (var i=0 ; i<characters.length ; i++){
 
-            /*
-            if(i>=104 && i<114) {continue;}  // turtles;
-            if(i>=346 && i<351) {continue;}  // Porcs;
-            if(i>=299 && i<304) {continue;}  // lobsters;
-            if(i==82 || i==265 || i==1179 || i==263) {continue;}  // raimbow evolvers
-            if(i==116 || i==117) {continue;}  // sea horses
-            if(i>=169 && i<173) {continue;}  // group leader
-            if(i>=590 && i<595) {continue;}  // hime
-            if(i>=99 && i<104){continue;}    // dragons
-            if(i>=1145 && i<1148){continue;}  // impel down mob
-            if(i>=268 && i<288){continue;} // fighter mob armed
-            if(i==574 || i==1452 ) {continue;}  // not exists
-            if(i>=193 && i<197 ) {continue;} // navy hq
-            if(i>=241 && i<246) {continue;} // baroque
-            */
 
             var index = farmable.indexOf(i+1);
             if(index!==-1){
-               console.log( "id : " + (i+1) +  "  farmable index : " + index);
+              // console.log( "id : " + (i+1) +  "  farmable index : " + index);
             }
             else{
                 if(characters[i][3]==rarity){
-                    console.log("add : " + (i+1));
+                    if((i+1)==0){
+                        console.log("add : " + (i+1));
+                    }
                     ids.push(i+1);
                 }
             }

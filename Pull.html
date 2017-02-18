@@ -17,7 +17,7 @@
         <div id="pull" align="center"></div>
         <br><br>
         <div id="gift" align="center"></div>
-        
+
         <script language="JavaScript">
             var ids = [];
             var mass_func_probabilities = [0.5, 0.8 , 0.98, 1];
@@ -47,8 +47,9 @@
                             break;
                         }
                     }
-                    console.log(star);
+                    console.log("rar : " + star);
                     var id = Math.floor(Math.random()*ids[star].length);
+                    console.log("id " + id);
                     pull_result = { id: id , star : star};
                     return pull_result;
                 }
