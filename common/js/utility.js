@@ -24,7 +24,7 @@
 
             var index = farmable.indexOf(i+1);
             if(index!==-1){
-              // console.log( "id : " + (i+1) +  "  farmable index : " + index);
+
             }
             else{
                 if(characters[i][3]==rarity){
@@ -34,6 +34,7 @@
         }
         return ids;
     }
+
 
 
     function getImgSrcById(id){
@@ -54,7 +55,7 @@
 
 
 
-    function getFarmableList() {
+    function getFarmableList(japan) {
 
         var idsFarmable = [];
         for (var i= 0; i<window.drops['Story Island'].length ; i++){
@@ -100,8 +101,13 @@
         for(var i = 0; i<window.drops['Special'].length ; i++){
             var special = window.drops['Special'][i];
             idsFarmable = idsFarmable.concat( special['All Difficulties']);
-            idsFarmable = idsFarmable.concat( special['Japan']);
+            if(!japan){
+                idsFarmable = idsFarmable.concat( special['Japan']);
+            }
             idsFarmable = idsFarmable.concat( special['Global']);
+            idsFarmable = idsFarmable.concat( special['6 star']);
+            idsFarmable = idsFarmable.concat( special['5 plus global']);
+            idsFarmable = idsFarmable.concat( special['5 plus japan']);
             idsFarmable = idsFarmable.concat( special.thumb);
             idsFarmable = idsFarmable.concat( special.Exhibition);
             idsFarmable = idsFarmable.concat( special.Underground);
