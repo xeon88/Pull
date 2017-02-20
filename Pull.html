@@ -13,8 +13,14 @@
         <div align="center"><h1><div class="prova3"><b>ORI!!</b> </div></h1> <img src="https://s30.postimg.org/f13788q75/gacha_effect_wanted_4.png" style=""></div>
         <div align="center"><h1><div class="prova4"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></div>
         <br><br><center><hr><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"><hr></center><br>
+        <form action="">
+        <input align="center" id="japan" type="checkbox" value="japan"/> Japan
         <div align="center"><h2><input type="button" class="button" value="RECRUIT 10+1" onclick="window.location.reload()"></h2></div>
+        </form>
+
+
         <div id="pull" align="center"></div>
+        <br><br>
         <br><br>
         <div id="gift" align="center"></div>
 
@@ -27,6 +33,7 @@
 
             $(document).ready(function () {
 
+                japan = $("japan").checked;
                 farmable = getFarmableList(japan);
 
                 ids.push(getIdListByRarity(3, units,farmable));
@@ -41,16 +48,13 @@
                 function single_pull() {
                     var uniform_dist_sample = Math.random();
                     var star = 0;
-                    console.log(uniform_dist_sample);
                     for(var j = 0 ; j<4 ; j++){
                         if(uniform_dist_sample<=mass_func_probabilities[j]){
                             star = j;
                             break;
                         }
                     }
-                    console.log("rar : " + star);
                     var id = Math.floor(Math.random()*ids[star].length);
-                    console.log("id " + id);
                     pull_result = { id: id , star : star};
                     return pull_result;
                 }

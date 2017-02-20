@@ -21,12 +21,8 @@
     function getIdListByRarity(rarity, characters, farmable) {
         var ids = [] ;
         for (var i=0 ; i<characters.length ; i++){
-
             var index = farmable.indexOf(i+1);
-            if(index!==-1){
-
-            }
-            else{
+            if(index==-1){
                 if(characters[i][3]==rarity){
                         ids.push(i+1);
                 }
