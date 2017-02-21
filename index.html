@@ -1,6 +1,6 @@
 <html lang="it">
     <head><title>Prova!</title>
-        <link rel="stylesheet" href="./common/css/prova.css" type="text/css" />
+        <link rel="stylesheet" href="common/css/style.css" type="text/css" />
         <script src="./common/js/units.js"></script>
         <script src="./common/js/drops.js"></script>
         <script src="./common/js/utility.js"></script>
@@ -8,22 +8,22 @@
 
     </head>
     <body>
-        <div align="center"><p class="prova1"><b>TESTA LA TUA FORTUNA PRIMA DI FARE I PULL NEL GIOCO!!!</b></p></div>
-        <div align="center"><h1><div class="prova2"><b>LEGGENDE!!!</b></div></h1> <img src="https://s30.postimg.org/sw1hqpkm9/gacha_effect_wanted_6.png" style=""></div>
-        <div align="center"><h1><div class="prova3"><b>ORI!!</b> </div></h1> <img src="https://s30.postimg.org/f13788q75/gacha_effect_wanted_4.png" style=""></div>
-        <div align="center"><h1><div class="prova4"><b>ARGENTI!</b></div></h1> <img src="https://s30.postimg.org/3ngnx1foh/gacha_effect_wanted_3.png" style=""></div>
-        <br><br><center><hr><img src="http://news.gb.onepiece-tc.jp/images/banner/en/app_banner_tavern_1008_mm1BX216MA.png"><hr></center><br>
-        <div align="center"><h2><input type="button" class="button" value="RECRUIT 10+1" onclick="window.location.reload()"></h2></div>
+
+    <div id="container">
+        <div id="intro"><h1>VEDIAMO CHE SPLENDIDI ARGENTONI PULLI</h1></div>
+        <div id="pull" ></div>
+        <div id="gift" ></div>
+
+        <div id="recruit">
+                <input type="button" class="button" value="MULTIPULL (10 +1)" onclick="window.location.reload()">
+        </div>
 
 
-        <div id="pull" align="center"></div>
-        <br><br>
-        <br><br>
-        <div id="gift" align="center"></div>
+    </div>
 
         <script language="JavaScript">
             var ids = [];
-            var mass_func_probabilities = [0.5, 0.8 , 0.98, 1];
+            var mass_func_probabilities = [0.5, 0.8 , 0.967, 1];
             var farmable = [];
             var pull_result ;
             var japan = false;
@@ -40,8 +40,6 @@
                 if(japan){ids[3].concat(window.drops.Special[0]['5 plus japan']);}
 
 
-                console.log(ids);
-
                 function single_pull() {
                     var uniform_dist_sample = Math.random();
                     var star = 0;
@@ -56,21 +54,21 @@
                     return pull_result;
                 }
 
-
-                // console.log(ids);
+            function exec() {
                 for(var i=0; i<10 ; i++){
                     var pull = single_pull();
                     $("#pull").append("<img src=" + getImgSrcById(ids[pull.star][pull.id]) + ">");
                 }
 
-
                 var pull = single_pull();
                 $("#gift").append("<img src=" + getImgSrcById(ids[pull.star][pull.id]) + ">");
+            }
+
+            exec();
             })
 
 
         </script>
     </body>
-
 
 </html>
