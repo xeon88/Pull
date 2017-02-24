@@ -64,8 +64,6 @@
             idsFarmable = uniq(idsFarmable);
         }
 
-
-
         for(var i = 0; i<window.drops['Weekly Island'].length ; i++){
             var extraIsland = window.drops['Weekly Island'][i];
             idsFarmable = idsFarmable.concat( extraIsland.drops);
@@ -123,3 +121,34 @@
         return !pos || item != ary[pos - 1];
         })
     }
+
+
+function single_pull(indexes, anniversary) {
+    var mass_func_probabilities = [0.5, 0.8 , 0.967, 1];
+    if(anniversary){
+       mass_func_probabilities = [0, 0.6, 0.35,5];
+    }
+    var uniform_dist_sample = Math.random();
+    var star = 0;
+    for(var j = 0 ; j<4 ; j++){
+        if(uniform_dist_sample<=mass_func_probabilities[j]){
+            star = j;
+            break;
+        }
+    }
+    var id = Math.floor(Math.random()*indexes[star].length);
+    pull_result = { id: id , star : star};
+    return pull_result;
+}
+
+
+function findGetParameter(parameterName) {
+    var result = null,
+        tmp = [];
+    var items = location.search.substr(1).split("&");
+    for (var index = 0; index < items.length; index++) {
+        tmp = items[index].split("=");
+        if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
+    }
+    return result;
+}
