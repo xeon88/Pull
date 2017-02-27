@@ -126,7 +126,7 @@
 function single_pull(indexes, anniversary) {
     var mass_func_probabilities = [0.5, 0.8 , 0.967, 1];
     if(anniversary){
-       mass_func_probabilities = [0, 0.6, 0.35,5];
+       mass_func_probabilities = [0, 0.6, 0.954,1];
     }
     var uniform_dist_sample = Math.random();
     var star = 0;
@@ -151,4 +151,17 @@ function findGetParameter(parameterName) {
         if (tmp[0] === parameterName) result = decodeURIComponent(tmp[1]);
     }
     return result;
+}
+
+
+function createCheckBox(name,label,check) {
+    if(check==="true"){
+        console.log("Checkbox creation with name " + name + " with checked");
+        checkbox = "<div class='checkboxes'><input id="+ name +" type=\"checkbox\" checked />"+label + "</div>";
+    }
+    else{
+        console.log("Checkbox creation with name " + name + " without unchecked");
+        checkbox = "<div class='checkboxes'><input id="+ name +" type=\"checkbox\" />"+label + "</div>";
+    }
+    return checkbox;
 }

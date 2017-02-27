@@ -10,16 +10,43 @@
     <body>
 
     <div id="container">
-        <div id="intro"><h1>VEDIAMO CHE SPLENDIDI ARGENTONI PULLI</h1></div>
+        <div id="intro"><h1>VEDIAMO SE LA BANDAI TI VUOLE BENE</h1></div>
 
-        
+        <script language="JavaScript">
 
-        <form>
-            <div id="options">
-                <input id="japan" type="checkbox" >Japan
-                <input id="sugo_anniversary" type="checkbox"> Anniversario
-            </div>
-        </form>
+            var cookies_enabled= false;
+
+            var cookieOK = (function() {
+                var id = new Date().getTime();
+                document.cookie = '__cookieOK=' + id + ';path=/';
+                cookies_enabled = document.cookie.indexOf(id) !== -1;
+            });
+
+
+
+            var japan= false;
+            var anniversary = false;
+
+            if(cookies_enabled && localStorage.length>2){
+               var japan = localStorage.getItem("japan");
+               var anniversary = localStorage.getItem("sugo_anniversary");
+            }
+            else {
+
+                if (location.search.substring(1) !== '') {
+                    var japan = findGetParameter("japan");
+                    var anniversary = findGetParameter("anniversary");
+                }
+            }
+
+            console.log("(Setting checkbox) anniversary : " + anniversary + "- japan : " + japan);
+            $("#container").append("<div id=\"options\"></div>");
+            $("#options").append(createCheckBox("japan","Jap",japan));
+            $("#options").append(createCheckBox("sugo_anniversary","Ann",anniversary));
+
+        </script>
+
+
         <div id="pull" ></div>
         <div id="gift" ></div>
 
@@ -33,20 +60,18 @@
         <script language="JavaScript">
             var ids = [];
             var farmable = [];
-            var cookies_enabled= false;
-            var japan = true;
-            var anniversary = true;
-
-            var cookieOK = (function() {
-                var id = new Date().getTime();
-                document.cookie = '__cookieOK=' + id + ';path=/';
-                cookies_enabled = document.cookie.indexOf(id) !== -1;
-            });
-
+            var japan = false;
+            var anniversary = false;
             // alert("cookies : " + cookieOK);
 
             $(document).ready(function () {
 
+
+
+                if(location.search.substring(1)!==''){
+                    japan = $.parseJSON(findGetParameter("japan"));
+                    anniversary = $.parseJSON(findGetParameter("anniversary"));
+                }
 
                 if (cookies_enabled && localStorage.length == 0) {
                     localStorage['japan'] = false;
@@ -55,18 +80,11 @@
 
 
                 if (cookies_enabled && localStorage.length == 2) {
-                    $("#japan").prop("checked", localStorage['japan']);
-                    $("#sugo_anniversary").prop("checked", localStorage['anniversary']);
-                    var japan = JSON.parse(localStorage.getItem("japan"));
-                    var anniversary = JSON.parse(localStorage.getItem("sugo_anniversary"));
+                    japan = JSON.parse(localStorage.getItem("japan"));
+                    anniversary = JSON.parse(localStorage.getItem("sugo_anniversary"));
                 }
 
-                if (location.search.substring(1) !== '') {
-                    var japan = findGetParameter("japan");
-                    var anniversary = findGetParameter("anniversary");
-                    $("#japan").prop("checked", japan);
-                    $("#sugo_anniversary").prop("checked", anniversary);
-                }
+
 
                 farmable = getFarmableList(japan);
                 ids.push(getIdListByRarity(3, units, farmable));
@@ -118,31 +136,33 @@
                     }
                 }
 
-                exec(ids);
-
-
-                $('#japan').on('change', function () {
-                    //alert("japan");
-                    var anniversary = $("#sugo_anniversary").is(':checked');
-                    var japan = JSON.stringify($(this).is(':checked'));
-                    window.open("index.html?japan=" + japan + "&anniversary=" + anniversary, '_self');
-                    //location.reload();
-                });
-
-                $('#sugo_anniversary').on('change', function () {
-                    var anniversary = JSON.stringify($(this).is(':checked'));
-                    var japan = $("#japan").is(':checked');
-                    window.open("index.html?japan=" + japan + "&anniversary=" + anniversary, '_self');
-                    //location.reload();
-
-                });
-
-
-                $('#pulls').on('click', function () {
-                    location.reload();
-                });
+                exec(ids,anniversary);
 
                 })
+
+
+            $('#japan').on('change', function () {
+                //alert("japan");
+                var anniversary = $("#sugo_anniversary").is(':checked');
+                var japan = JSON.stringify($(this).is(':checked'));
+                //alert("(Click event)anniversary : " + anniversary + "- japan : " + japan);
+                window.open("index.html?japan=" + japan + "&anniversary=" + anniversary, '_self');
+                //location.reload();
+            });
+
+            $('#sugo_anniversary').on('change', function () {
+                var anniversary = JSON.stringify($(this).is(':checked'));
+                var japan = $("#japan").is(':checked');
+                //alert("(Click event)anniversary : " + anniversary + "- japan : " + japan);
+                window.open("index.html?japan=" + japan + "&anniversary=" + anniversary, '_self');
+                //location.reload();
+
+            });
+
+
+            $('#pulls').on('click', function () {
+                location.reload();
+            });
 
         </script>
     </body>

@@ -21,9 +21,26 @@ body {
 
 }
 
+#options{
+	width: 960px;
+	margin-left : 41.5%;
+	position: relative;
+	text-align: center;
+}
+
+.checkboxes{
+	padding : 5px 5px 5px 5px ;
+	float : left;
+}
+
+.checkboxes {
+	font-style: oblique;
+	font-size: 14pt;
+}
+
 #pull{
 	position: relative;
-	margin-top: 0;
+	margin-top: 15%;
 	max-width: 72%;
 	margin-left: 14%;
 	text-align: center;
