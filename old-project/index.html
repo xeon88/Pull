@@ -92,7 +92,7 @@
                 ids.push(getIdListByRarity(5, units, farmable));
                 ids.push(window.drops.Special[0]['5 plus global']);
 
-                
+
 
                 if (japan) {
                     ids[3].concat(window.drops.Special[0]['5 plus japan']);
@@ -113,11 +113,11 @@
 
                     for (var i = 0; i < 10; i++) {
                         var pull = single_pull(indexes, anniversary);
-                        $("#pull").append("<img src=" + getImgSrcById(indexes[pull.star][pull.id]) + ">");
+                        $("#pull").append("<div class='pull-wrapper'><img src=" + getImgSrcById(indexes[pull.star][pull.id]) + "><p>" + indexes[pull.star][pull.id] + "</p></div>");
                     }
 
                     var pull = single_pull(indexes, anniversary);
-                    $("#gift").append("<img src=" + getImgSrcById(indexes[pull.star][pull.id]) + ">");
+                    $("#gift").append("<div class='pull-wrapper'><img src=" + getImgSrcById(indexes[pull.star][pull.id]) + "><p>" + indexes[pull.star][pull.id] + "</p></div>");
                 }
 
 

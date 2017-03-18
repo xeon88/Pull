@@ -38,35 +38,43 @@ body {
 	font-size: 14pt;
 }
 
-#pull{
+
+#pull {
 	position: relative;
+	height: 110px;
 	margin-top: 15%;
-	max-width: 72%;
-	margin-left: 14%;
+	max-width: 76%;
+	margin-left: 12%;
 	text-align: center;
-	padding: 10px;
+	padding: 10px 5px 10px 5px;
 	border-radius: 5px;
 	background-color: darkgoldenrod;
 }
 
-
 #gift{
+	height: 110px;
 	position: relative;
 	margin-top: 5%;
-	max-width: 8%;
+	max-width: 7.5%;
 	margin-left: 46%;
 	text-align: center;
-	padding: 6px;
+	padding: 10px 5px 10px 5px;
 	border-radius: 5px;
 	background-color: darkgoldenrod;
 	margin-bottom: 5%;
 }
 
 
-img {
+.pull-wrapper{
+	position : relative;
+	float : left;
+	margin-left:1%;
+	margin-top: 1%;
+}
+.pull-wrapper img {
 	width: 72px;
 	height: 72px;
-	padding: 2px;
+	margin-left: 4%;
 }
 
 
@@ -121,3 +129,4 @@ img {
 	position:relative;
 	top:1px;
 }
+
